@@ -40,6 +40,7 @@ body {
   transition: transform 0.5s;
   font-size: 2em;
   font-weight: 700;
+  color: #000;
 }
 
 .element:hover {
