@@ -12,9 +12,13 @@ cells.forEach((cell, index) => {
       if (winner) {
         const winnerName = game.players.find((p) => p.name === winner).name;
         highlightWinningCombo(game.board.getWinningCombo());
-        alert(`${winnerName} победил!`);
+        setTimeout(function () {
+          alert(`${winnerName} победил!`);
+        }, 500);
       } else if (game.board.isDraw()) {
-        alert(`Ничья!`);
+        setTimeout(function () {
+          alert(`Ничья!`);
+        }, 500);
       }
     }
   });
